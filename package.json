@@ -1,0 +1,24 @@
+{
+  "name": "tuva-text-to-sql-demo",
+  "version": "1.0.0",
+  "description": "Text-to-SQL demo for Tuva Project data using Amazon Bedrock with vector search",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "setup-db": "node setup-database.js",
+    "setup-tuva": "node setup-tuva.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@aws-sdk/client-bedrock-runtime": "^3.490.0",
+    "better-sqlite3": "^9.2.0",
+    "dotenv": "^16.3.1",
+    "@pinecone-database/pinecone": "^2.0.1",
+    "simple-git": "^3.20.0",
+    "js-yaml": "^4.1.0"
+  },
+  "keywords": ["text-to-sql", "bedrock", "tuva", "pinecone", "vector-search"],
+  "author": "",
+  "license": "MIT"
+}
